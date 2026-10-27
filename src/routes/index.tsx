@@ -234,14 +234,14 @@ function MobileAppCard({ app }: { app: MobileApp }) {
 }
 
 function Projects() {
-  const [first, ...rest] = PROJECTS;
+  const [web, esim, route, research] = PROJECTS as [Project, Project, Project, Project];
   return (
     <section id="projects" className="border-t border-border py-20">
       <div className={container}>
         <SectionHead eyebrow="WORK" title="Selected Projects" sub="A selection of applications, platforms, and intelligent systems I've worked on." />
         <div className="grid gap-6 md:grid-cols-2">
-          <ProjectCard p={first} />
-          <ProjectCard p={rest[2]} />
+          <ProjectCard p={web} />
+          <ProjectCard p={research} />
         </div>
 
         <div className="mt-16">
@@ -257,8 +257,8 @@ function Projects() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2">
-          <ProjectCard p={rest[0]} />
-          <ProjectCard p={rest[1]} />
+          <ProjectCard p={esim} />
+          <ProjectCard p={route} />
         </div>
       </div>
     </section>
