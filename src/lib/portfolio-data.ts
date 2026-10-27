@@ -7,7 +7,9 @@ export const PROFILE = {
   github: "https://github.com/Mohameedmn",
   portrait: "https://mohameedmn.github.io/images/photo_id.jpg",
   // Place the CV PDF at public/Mohamed_Mansouri_CV.pdf
-  cvUrl: "/Mohamed_Mansouri_CV.pdf",
+  // BASE_URL keeps this working whether the site is served from "/" or from a
+  // repository subpath such as "/screenshot-to-pixel-perfect-267/".
+  cvUrl: `${import.meta.env.BASE_URL}Mohamed_Mansouri_CV.pdf`,
   usthb: "https://www.usthb.dz/",
 };
 
