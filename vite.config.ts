@@ -28,7 +28,7 @@ export default defineConfig({
         }
       : {}),
   },
-  ...(isPagesBuild ? { nitro: { preset: "github-pages" } } : {}),
+  ...(isPagesBuild ? { nitro: false } : {}),
   vite: {
     base: pagesBase || "/",
   },
