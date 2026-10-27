@@ -187,7 +187,7 @@ function ProjectCard({ p }: { p: Project }) {
   );
 }
 
-function Phone({ src, i, name }: { src?: string; i: number; name: string }) {
+function Phone({ src, i, name }: { src?: string | undefined; i: number; name: string }) {
   return (
     <div className="w-[30%] max-w-[150px] rounded-[1.4rem] border-4 border-foreground bg-foreground p-0.5 shadow-card">
       <div className="flex aspect-[9/19] items-center justify-center overflow-hidden rounded-[1.1rem] bg-card">
