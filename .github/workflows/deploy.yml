@@ -32,10 +32,10 @@ jobs:
 
       # PAGES_BASE switches the build into static mode: the site is prerendered
       # to plain HTML and every asset URL is prefixed with the repository
-      # subpath, so it loads from https://Mohameedmn.github.io/screenshot-to-pixel-perfect-267/.
+      # subpath, so it loads from https://mohameedmn.github.io/portfolio/.
       - name: Build the static site
         env:
-          PAGES_BASE: /screenshot-to-pixel-perfect-267/
+          PAGES_BASE: /portfolio/
         run: bun run build
 
       # GitHub Pages serves 404.html for unknown paths; reuse the built page.
