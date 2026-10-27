@@ -11,7 +11,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // Lovable preview, and Lovable publish) this stays unset, so the app keeps base
 // "/" and the default Cloudflare/nitro target — nothing about the preview or
 // the published app changes.
-const pagesBase = process.env.PAGES_BASE;
+const pagesBase = process.env["PAGES_BASE"];
 const isPagesBuild = Boolean(pagesBase);
 
 export default defineConfig({
